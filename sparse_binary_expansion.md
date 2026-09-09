@@ -52,6 +52,9 @@ generated in ascending bit length.
 Use Python 3.14+. Write a function with this signature:
 
 ```python
+from collections.abc import Generator
+
+
 def generate() -> Generator[tuple[int, int, int]]:
     """Generate numbers satisfying the sparse binary expansion rule.
 
