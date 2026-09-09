@@ -41,6 +41,8 @@ zeros and two ones), we get the following sum rom "duplicating" the digits of th
 = 111111111111111111
 ```
 
+## Part 1
+
 Your task is to construct these numbers in an efficient way. Enumerating all integers and then checking whether they
 satisfy the constraint is a no-go: that would be too slow. Your solution must run in constant time.
 
@@ -48,3 +50,22 @@ It is _not_ a requirement for the numbers to be generated in strictly ascending 
 generated in ascending bit length.
 
 Use Python.
+
+## Part 2
+
+Extend Part 1 with additional numbers not covered by the rules above. For example, 1011001 (89) can be summed using
+carry bits (displayed in parenthesis below).
+
+Your solution must still be O(1). Only include additional rules that can be implemented in constant time.
+
+```
+(  11111     )
+      1011001
++    10110010
++   101100100
++ 10110010000
+-------------
+= 11111111111
+```
+
+Use any a type-safe compiled language.
