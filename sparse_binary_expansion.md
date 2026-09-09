@@ -44,7 +44,7 @@ zeros and two ones), we get the following sum rom "duplicating" the digits of th
 Your task is to construct these numbers in an efficient way. Enumerating all integers and then checking whether they
 satisfy the constraint is a no-go: that would be too slow. Your solution must run in constant time.
 
-It is *not* a requirement for the numbers to be generated in strictly ascending order, however, they should be
+It is _not_ a requirement for the numbers to be generated in strictly ascending order, however, they should be
 generated in ascending bit length.
 
 Use Python.
