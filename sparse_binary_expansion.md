@@ -49,9 +49,20 @@ satisfy the constraint is a no-go: that would be too slow. Your solution must ru
 It is _not_ a requirement for the numbers to be generated in strictly ascending order, however, they should be
 generated in ascending bit length.
 
-Use Python.
+Use Python 3.14+. Write a function with this signature:
+
+```python
+def generate() -> Generator[tuple[int, int, int]]:
+    """Generate numbers satisfying the sparse binary expansion rule.
+
+    Yields:
+        Tuples of (n, bit_length, sum_bit_length)
+    """
+```
 
 ## Part 2
+
+(Will be provided once Part 1 has been completed).
 
 Extend Part 1 with additional numbers not covered by the rules above. For example, 1011001 (89) can be summed using
 carry bits (displayed in parenthesis below).
